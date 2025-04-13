@@ -1,0 +1,75 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Segoe UI', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease; /* Smooth transition for hiding */
+}
+
+.header.hide {
+    transform: translateY(-100%); /* Hides the header when scrolling down */
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Adjust logo size */
+    height: 50px; /* Adjust logo size */
+    object-fit: cover; /* Ensures the image is cropped correctly */
+    margin-right: 10px;
+    border-radius: 50%; /* Makes the logo circular */
+    overflow: hidden; /* Prevents overflow of image */
+}
+
+.site-name {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+}
+
+.right-section {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-section {
+        margin-top: 15px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
