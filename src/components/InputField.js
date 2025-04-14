@@ -21,7 +21,7 @@ const InputField = () => {
     setError(null);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/analyze/niche', {
+      const response = await fetch('https://backend5-production.up.railway.app/analyze/niche', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
