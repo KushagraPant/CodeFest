@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/FrontPage.css'; 
 
 const images = [
@@ -30,13 +31,15 @@ const FrontPage = () => {
           />
         ))}
       </div>
+       <div className="overlay-content">
+    <h1 className="main-title">Welcome to TrendScope</h1>
+    <p className="tagline">AI-Powered Research. Real-World Results.</p>
+    <Link to="/input">
+      <button className="get-started-btn">Get Started</button>
+    </Link>
+  </div>
+</section>
 
-      <div className="overlay-content">
-        <h1 className="main-title">Welcome to TrendScope</h1>
-        <p className="tagline">AI-Powered Research. Real-World Results.</p>
-        <button className="get-started-btn">Get Started</button>
-      </div>
-    </section>
   );
 };
 
