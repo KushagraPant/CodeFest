@@ -1,30 +1,67 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/InputField.css';
 
 const InputField = () => {
   const [dropdownValue, setDropdownValue] = useState('');
   const [textValue, setTextValue] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Dropdown:', dropdownValue);
-    console.log('Text:', textValue);
+
+    if (!dropdownValue || !textValue) {
+      setError('Please fill in all fields');
+      return;
+    }
+
+    setIsLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch('http://127.0.0.1:8000/analyze/niche', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          business_keyword: dropdownValue,
+          business_description: textValue
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      localStorage.setItem('analysisResult', JSON.stringify(data));
+      navigate('/result');
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setError('Failed to analyze. Please try again later.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
-    <div className="container">
-      <div className="image-container">
+    <div className="input-form-container">
+      <div className="input-form-image-container">
         <img src="/images/form.jpg" alt="Business Info" />
       </div>
-      <form onSubmit={handleSubmit} className="form-box">
-        <h2 className="form-title">Write your Business Info</h2>
+      <form onSubmit={handleSubmit} className="input-form-box">
+        <h2 className="input-form-title">Write your Business Info</h2>
+
+        {error && <div className="input-form-error-message">{error}</div>}
+
         <label>
-          Choose an option:
+          Choose your business niche:
           <select
             value={dropdownValue}
             onChange={(e) => setDropdownValue(e.target.value)}
-            className="input"
+            className="input-form-input"
+            required
           >
             <option value="">-- Select --</option>
             <option value="Health & Wellness">Health & Wellness</option>
@@ -43,17 +80,24 @@ const InputField = () => {
         </label>
 
         <label>
-          Enter text:
+          Describe your business:
           <textarea
             value={textValue}
             onChange={(e) => setTextValue(e.target.value)}
-            className="input large-textbox"
-            placeholder="Type something..."
+            className="input-form-input input-form-large-textbox"
+            placeholder="Describe your business model, target audience, and unique value proposition..."
+            required
+            rows={6}
           />
         </label>
-        <Link to="/result">
-        <button className="submit-button">Submit</button>
-        </Link>
+
+        <button
+          type="submit"
+          className="input-form-submit-button"
+          disabled={isLoading}
+        >
+          {isLoading ? 'Analyzing...' : 'Analyze My Niche'}
+        </button>
       </form>
     </div>
   );

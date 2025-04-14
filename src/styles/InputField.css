@@ -1,17 +1,17 @@
-.container {
+.input-form-container {
     display: flex;
-    justify-content: center;  
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background: url('../../public/images/formbg.jpg') no-repeat center center / cover;  
-    flex-direction: row;  
-    margin: 0; 
-}
-
-.form-box {
+    background: url('../../public/images/formbg.jpg') no-repeat center center / cover;
+    flex-direction: row;
+    margin: 0;
+  }
+  
+  .input-form-box {
     background-color: #ffffff;
     padding: 40px;
-    border-radius: 0px 12px 12px 0px;  
+    border-radius: 0px 12px 12px 0px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     width: 40%;
     height: 80%;
@@ -19,34 +19,33 @@
     flex-direction: column;
     gap: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 0; 
-    margin-right: 0; 
-    z-index: 10; 
-}
-
-.image-container {
-    width: auto;  
-    height: 80%;  
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 10;
+  }
+  
+  .input-form-image-container {
+    width: auto;
+    height: 80%;
     display: flex;
-    justify-content: center;  
-    align-items: center;  
-    border-radius: 12px 0px 0px 12px;  
-}
-
-
-.image-container img {
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 0px 0px 12px;
+  }
+  
+  .input-form-image-container img {
     max-width: 100%;
-    height: 100%;  
-    border-radius: 12px 0px 0px 12px; 
-} 
-
-label {
+    height: 100%;
+    border-radius: 12px 0px 0px 12px;
+  }
+  
+  .input-form-box label {
     font-weight: 600;
     font-size: 14px;
     color: #333;
-}
-
-.input {
+  }
+  
+  .input-form-input {
     width: 100%;
     padding: 10px 14px;
     margin-top: 4px;
@@ -56,23 +55,23 @@ label {
     background-color: #f9f9f9;
     transition: border 0.3s, box-shadow 0.3s;
     font-size: 14px;
-}
-
-.input:focus {
+  }
+  
+  .input-form-input:focus {
     outline: none;
     border-color: #4a90e2;
     box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
     background-color: #fff;
-}
-
-.large-textbox {
-    height: 150px; 
+  }
+  
+  .input-form-large-textbox {
+    height: 150px;
     resize: vertical;
     padding-top: 12px;
     padding-bottom: 12px;
-}
-
-.submit-button {
+  }
+  
+  .input-form-submit-button {
     padding: 12px;
     background-color: #4a90e2;
     color: #fff;
@@ -82,8 +81,15 @@ label {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.submit-button:hover {
+  }
+  
+  .input-form-submit-button:hover {
     background-color: #357ab8;
-}
+  }
+  
+  .input-form-error-message {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  

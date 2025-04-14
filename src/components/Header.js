@@ -30,7 +30,7 @@ const Header = () => {
       </div>
       <div className="right-section">
       <Link to="/" className="nav-link">Home</Link>
-        <Link to="/about" className="nav-link">About Us</Link>
+        <Link to="/aboutus" className="nav-link">About Us</Link>
         <Link to="/contact" className="nav-link">Contact Us</Link>
       </div>
     </header>

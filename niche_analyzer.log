@@ -1,0 +1,120 @@
+2025-04-14 14:02:42,821 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.250.228:8000
+2025-04-14 14:02:42,821 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-14 14:02:51,848 - ERROR - 192.168.250.228 - - [14/Apr/2025 14:02:51] code 400, message Bad request version ('CµãË±t+K')
+2025-04-14 14:02:51,848 - INFO - 192.168.250.228 - - [14/Apr/2025 14:02:51] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03÷:ÖO®\x92:+\x0b¼Ô\x1d\x08\x92S\x9dúó\x9aMÜvìçA\x89\x04\x09\x17Ó°L \x16Ð×xRbViW\x82\x00\x90\x1f\x80Z4hÓ£Õ\x19ýCò#\x0e¸Â\x96ö`T\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063jj\x00\x00\x00\x0b\x00\x02\x01\x00\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00#\x00\x00\x00\x12\x00\x00þ\x0d\x00º\x00\x00\x01\x00\x01R\x00 Ù];\x0b¤n\x18\x19\x9b\x07ß\x86îú\x95Õ]\x19Í\x9a$Ü\\Ìv\x9e*¬2²n$\x00\x90ÒI®ît<e®\x14gfF=\x98\x8f\x93³Y}¿\x12&ÎFo³\x00\x1fñ\x1fU|Öt=\x97álJ®\x11J¥.Û\x021ê\x0fôyox\x08äl Õ\x1cls©À\x82ä\x8d\x8b0\x17\x90°óÏ¨G2\x04\x91Æ¾\\\x19\x89Vàô\x1f\x15\x9elñTm?\x0b>%Ø\x99Ä8È³vézØ\x0f}\x85\x02i\x1e\x01\x07ãÞ¡\x0cY\x08XCö\x86_÷8\x95PÛ\x94YÂ\x98×bÁ\x83·À¼\\Ô\x00-\x00\x02\x01\x01\x00\x17\x00\x00ÿ\x01\x00\x01\x00Di\x00\x05\x00\x03\x02h2\x00\x1b\x00\x03\x02\x00\x02\x003\x04ï\x04íJJ\x00\x01\x00\x11ì\x04À¿{\x0b-Á\x03³ì\x0dÈ\x99xg\x85\x92\x82\x83,9£Ã\x9f¡f@\x18¯\x02P\x04ÖL\x0dç CµãË±t+K[0m" 400 -
+2025-04-14 14:02:51,854 - ERROR - 192.168.250.228 - - [14/Apr/2025 14:02:51] code 400, message Bad request version ('tm\x80\x1b\\zÀóè\x8bQ¶H\x14')
+2025-04-14 14:02:51,856 - INFO - 192.168.250.228 - - [14/Apr/2025 14:02:51] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03ú+P±>\x1b\x1dbzs7®æ[Wÿ\x06'¨\x07\x81ëGt¬O\x10"ÓL\x8eÅ «î5ÇÜUïü\x93ÃÂ\x0dÙÔèwE\x80På$I$\x7f\x19úíÄ±>\x9fq\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93zz\x00\x00\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04À¥WÁÿ\x82³\x8fÈ\x9e.à«sô\x1aFs,¦h\x18¥ù5«Ë\x0fàÖ\x97`·S\x1aÉ\x1d/éjäÚ\x99\x05èµ\x07õ\x17³{\x97ì\x09tm\x80\x1b\\zÀóè\x8bQ¶H\x14[0m" 400 -
+2025-04-14 14:03:00,404 - INFO - 192.168.250.228 - - [14/Apr/2025 14:03:00] "[33mGET / HTTP/1.1[0m" 404 -
+2025-04-14 14:03:01,725 - INFO - 192.168.250.228 - - [14/Apr/2025 14:03:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-14 14:17:46,612 - INFO - 192.168.250.228 - - [14/Apr/2025 14:17:46] "[33mGET / HTTP/1.1[0m" 404 -
+2025-04-14 14:23:03,064 - INFO - 127.0.0.1 - - [14/Apr/2025 14:23:03] "OPTIONS /analyze/niche HTTP/1.1" 200 -
+2025-04-14 14:23:03,095 - INFO - Starting analysis for: healthcare
+2025-04-14 14:23:03,097 - ERROR - Keyword extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\kushagra pant/nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Local\\Programs\\Python\\Python312\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Local\\Programs\\Python\\Python312\\share\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Local\\Programs\\Python\\Python312\\lib\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+    - './nltk_data'
+**********************************************************************
+
+2025-04-14 14:23:16,814 - ERROR - Client error 400 fetching https://html.duckduckgo.com/html/: Can not decode content-encoding: brotli (br). Please install `Brotli`
+2025-04-14 14:23:16,814 - ERROR - Failed to fetch https://html.duckduckgo.com/html/ after 3 attempts
+2025-04-14 14:23:17,853 - INFO - Found 0 DuckDuckGo results for 'challenges facing healthcare businesses'
+2025-04-14 14:23:17,853 - WARNING - No data collected from scraping
+2025-04-14 14:23:17,858 - INFO - 127.0.0.1 - - [14/Apr/2025 14:23:17] "POST /analyze/niche HTTP/1.1" 200 -
+2025-04-14 14:23:32,631 - INFO - 127.0.0.1 - - [14/Apr/2025 14:23:32] "OPTIONS /analyze/niche HTTP/1.1" 200 -
+2025-04-14 14:23:32,646 - INFO - Starting analysis for: healthcare
+2025-04-14 14:23:32,650 - ERROR - Keyword extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\kushagra pant/nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Local\\Programs\\Python\\Python312\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Local\\Programs\\Python\\Python312\\share\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Local\\Programs\\Python\\Python312\\lib\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+    - './nltk_data'
+**********************************************************************
+
+2025-04-14 14:23:41,352 - ERROR - Client error 400 fetching https://html.duckduckgo.com/html/: Can not decode content-encoding: brotli (br). Please install `Brotli`
+2025-04-14 14:23:41,360 - ERROR - Failed to fetch https://html.duckduckgo.com/html/ after 3 attempts
+2025-04-14 14:23:44,250 - ERROR - Client error 400 fetching https://html.duckduckgo.com/html/: Can not decode content-encoding: brotli (br). Please install `Brotli`
+2025-04-14 14:23:44,250 - ERROR - Failed to fetch https://html.duckduckgo.com/html/ after 3 attempts
+2025-04-14 14:23:44,260 - WARNING - No data collected from scraping
+2025-04-14 14:23:44,262 - INFO - 127.0.0.1 - - [14/Apr/2025 14:23:44] "POST /analyze/niche HTTP/1.1" 200 -
+2025-04-14 14:25:02,140 - INFO - 127.0.0.1 - - [14/Apr/2025 14:25:02] "OPTIONS /analyze/niche HTTP/1.1" 200 -
+2025-04-14 14:25:02,157 - INFO - Starting analysis for: healthcare
+2025-04-14 14:25:03,647 - ERROR - Client error 400 fetching https://html.duckduckgo.com/html/: Can not decode content-encoding: brotli (br). Please install `Brotli`
+2025-04-14 14:25:03,647 - ERROR - Failed to fetch https://html.duckduckgo.com/html/ after 3 attempts
+2025-04-14 14:25:03,926 - ERROR - Client error 400 fetching https://html.duckduckgo.com/html/: Can not decode content-encoding: brotli (br). Please install `Brotli`
+2025-04-14 14:25:03,926 - ERROR - Failed to fetch https://html.duckduckgo.com/html/ after 3 attempts
+2025-04-14 14:25:03,926 - WARNING - No data collected from scraping
+2025-04-14 14:25:03,926 - INFO - 127.0.0.1 - - [14/Apr/2025 14:25:03] "POST /analyze/niche HTTP/1.1" 200 -
+2025-04-14 14:35:40,119 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.250.228:8000
+2025-04-14 14:35:40,119 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-14 14:56:03,026 - INFO - 127.0.0.1 - - [14/Apr/2025 14:56:03] "OPTIONS /analyze/niche HTTP/1.1" 200 -
+2025-04-14 14:56:03,041 - INFO - Starting analysis for: Health & Wellness
+2025-04-14 14:56:03,044 - ERROR - Keyword extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\kushagra pant/nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Local\\Programs\\Python\\Python312\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Local\\Programs\\Python\\Python312\\share\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Local\\Programs\\Python\\Python312\\lib\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+    - './nltk_data'
+**********************************************************************
+
+2025-04-14 14:56:12,170 - WARNING - Error fetching https://html.duckduckgo.com/html/ (attempt 1): Cannot connect to host html.duckduckgo.com:443 ssl:default [The specified network name is no longer available]
+2025-04-14 14:56:18,401 - ERROR - Client error 400 fetching https://html.duckduckgo.com/html/: Can not decode content-encoding: brotli (br). Please install `Brotli`
+2025-04-14 14:56:18,401 - ERROR - Failed to fetch https://html.duckduckgo.com/html/ after 3 attempts
+2025-04-14 14:56:23,051 - WARNING - Scraping task failed: 
+2025-04-14 14:56:23,051 - WARNING - No data collected from scraping
+2025-04-14 14:56:23,051 - INFO - 127.0.0.1 - - [14/Apr/2025 14:56:23] "POST /analyze/niche HTTP/1.1" 200 -

@@ -1,0 +1,120 @@
+.result-container {
+    padding: 40px;
+    background-color: #f7f9fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  .result-container h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  .result-search-query {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .result-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .result-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .result-card h2 {
+    margin-bottom: 16px;
+    color: #34495e;
+  }
+  
+  .result-content p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .result-content ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .trend-item, .competitor-item, .sentiment-item, .entity-item {
+    margin-bottom: 20px;
+  }
+  
+  .trend-item h3,
+  .competitor-item h3,
+  .entity-item h3 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+  }
+  
+  .sentiment-positive {
+    color: #27ae60;
+  }
+  
+  .sentiment-neutral {
+    color: #f39c12;
+  }
+  
+  .sentiment-negative {
+    color: #e74c3c;
+  }
+  
+  .entity-tag {
+    display: inline-block;
+    background-color: #e1ecf4;
+    color: #2c3e50;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin: 4px;
+    font-weight: 500;
+  }
+  
+  .entity-person {
+    background-color: #f6d365;
+  }
+  
+  .entity-organization {
+    background-color: #ff9a9e;
+  }
+  
+  .entity-location {
+    background-color: #9be7ff;
+  }
+  
+  .result-loading,
+  .result-error-message {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #e74c3c;
+  }
+  
+  .result-submit-button {
+    margin-top: 30px;
+    align-self: center;
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .result-submit-button:hover {
+    background-color: #357ab8;
+  }
+  
