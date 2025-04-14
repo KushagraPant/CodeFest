@@ -118,3 +118,507 @@
 2025-04-14 14:56:23,051 - WARNING - Scraping task failed: 
 2025-04-14 14:56:23,051 - WARNING - No data collected from scraping
 2025-04-14 14:56:23,051 - INFO - 127.0.0.1 - - [14/Apr/2025 14:56:23] "POST /analyze/niche HTTP/1.1" 200 -
+2025-04-14 15:06:36,472 - INFO - 127.0.0.1 - - [14/Apr/2025 15:06:36] "OPTIONS /analyze/niche HTTP/1.1" 200 -
+2025-04-14 15:06:36,477 - INFO - Starting analysis for: Health & Wellness
+2025-04-14 15:06:36,479 - ERROR - Keyword extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\kushagra pant/nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Local\\Programs\\Python\\Python312\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Local\\Programs\\Python\\Python312\\share\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Local\\Programs\\Python\\Python312\\lib\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+    - './nltk_data'
+**********************************************************************
+
+2025-04-14 15:06:47,794 - ERROR - Client error 400 fetching https://html.duckduckgo.com/html/: Can not decode content-encoding: brotli (br). Please install `Brotli`
+2025-04-14 15:06:47,794 - ERROR - Failed to fetch https://html.duckduckgo.com/html/ after 3 attempts
+2025-04-14 15:06:47,996 - INFO - Found 0 DuckDuckGo results for ' in Health & Wellness sector'
+2025-04-14 15:06:47,996 - WARNING - No data collected from scraping
+2025-04-14 15:06:47,996 - INFO - 127.0.0.1 - - [14/Apr/2025 15:06:47] "POST /analyze/niche HTTP/1.1" 200 -
+2025-04-14 15:28:26,256 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.250.228:8000
+2025-04-14 15:28:26,256 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-14 15:28:59,086 - INFO - 127.0.0.1 - - [14/Apr/2025 15:28:59] "OPTIONS /analyze/niche HTTP/1.1" 200 -
+2025-04-14 15:28:59,086 - ERROR - Exception on /analyze/niche [POST]
+Traceback (most recent call last):
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask_limiter\extension.py", line 1314, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 976, in ensure_sync
+    return self.async_to_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 997, in async_to_sync
+    raise RuntimeError(
+RuntimeError: Install Flask with the 'async' extra in order to use async views.
+2025-04-14 15:28:59,086 - ERROR - Server error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-04-14 15:28:59,086 - INFO - 127.0.0.1 - - [14/Apr/2025 15:28:59] "[35m[1mPOST /analyze/niche HTTP/1.1[0m" 500 -
+2025-04-14 15:29:01,113 - ERROR - Exception on /analyze/niche [POST]
+Traceback (most recent call last):
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask_limiter\extension.py", line 1314, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 976, in ensure_sync
+    return self.async_to_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 997, in async_to_sync
+    raise RuntimeError(
+RuntimeError: Install Flask with the 'async' extra in order to use async views.
+2025-04-14 15:29:01,117 - ERROR - Server error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-04-14 15:29:01,118 - INFO - 127.0.0.1 - - [14/Apr/2025 15:29:01] "[35m[1mPOST /analyze/niche HTTP/1.1[0m" 500 -
+2025-04-14 15:30:50,848 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.250.228:8000
+2025-04-14 15:30:50,848 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-14 15:30:55,422 - INFO - 127.0.0.1 - - [14/Apr/2025 15:30:55] "OPTIONS /analyze/niche HTTP/1.1" 200 -
+2025-04-14 15:30:55,425 - ERROR - Exception on /analyze/niche [POST]
+Traceback (most recent call last):
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask_limiter\extension.py", line 1314, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 976, in ensure_sync
+    return self.async_to_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 997, in async_to_sync
+    raise RuntimeError(
+RuntimeError: Install Flask with the 'async' extra in order to use async views.
+2025-04-14 15:30:55,427 - ERROR - Server error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-04-14 15:30:55,427 - INFO - 127.0.0.1 - - [14/Apr/2025 15:30:55] "[35m[1mPOST /analyze/niche HTTP/1.1[0m" 500 -
+2025-04-14 15:30:56,336 - ERROR - Exception on /analyze/niche [POST]
+Traceback (most recent call last):
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask_limiter\extension.py", line 1314, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 976, in ensure_sync
+    return self.async_to_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 997, in async_to_sync
+    raise RuntimeError(
+RuntimeError: Install Flask with the 'async' extra in order to use async views.
+2025-04-14 15:30:56,336 - ERROR - Server error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-04-14 15:30:56,336 - INFO - 127.0.0.1 - - [14/Apr/2025 15:30:56] "[35m[1mPOST /analyze/niche HTTP/1.1[0m" 500 -
+2025-04-14 15:30:56,922 - ERROR - Exception on /analyze/niche [POST]
+Traceback (most recent call last):
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask_limiter\extension.py", line 1314, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 976, in ensure_sync
+    return self.async_to_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\flask\app.py", line 997, in async_to_sync
+    raise RuntimeError(
+RuntimeError: Install Flask with the 'async' extra in order to use async views.
+2025-04-14 15:30:56,925 - ERROR - Server error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-04-14 15:30:56,925 - INFO - 127.0.0.1 - - [14/Apr/2025 15:30:56] "[35m[1mPOST /analyze/niche HTTP/1.1[0m" 500 -
+2025-04-14 15:33:25,157 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.250.228:8000
+2025-04-14 15:33:25,157 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-14 15:33:30,606 - INFO - 127.0.0.1 - - [14/Apr/2025 15:33:30] "OPTIONS /analyze/niche HTTP/1.1" 200 -
+2025-04-14 15:33:30,619 - INFO - Starting analysis for: Health & Wellness
+2025-04-14 15:33:30,619 - ERROR - Keyword extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\kushagra pant/nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\share\\nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\lib\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+    - './nltk_data'
+**********************************************************************
+
+2025-04-14 15:33:32,625 - ERROR - Client error 400 fetching https://html.duckduckgo.com/html/: Can not decode content-encoding: brotli (br). Please install `Brotli`
+2025-04-14 15:33:32,625 - ERROR - Failed to fetch https://html.duckduckgo.com/html/ after 3 attempts
+2025-04-14 15:33:32,736 - INFO - Found 0 DuckDuckGo results for 'growth opportunities in Health & Wellness'
+2025-04-14 15:33:32,736 - WARNING - No data collected from scraping
+2025-04-14 15:33:32,736 - INFO - 127.0.0.1 - - [14/Apr/2025 15:33:32] "POST /analyze/niche HTTP/1.1" 200 -
+2025-04-14 15:34:53,496 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.250.228:8000
+2025-04-14 15:34:53,496 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-14 15:35:20,967 - INFO - 127.0.0.1 - - [14/Apr/2025 15:35:20] "OPTIONS /analyze/niche HTTP/1.1" 200 -
+2025-04-14 15:35:20,977 - INFO - Starting analysis for: Health & Wellness
+2025-04-14 15:35:20,981 - ERROR - Keyword extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\kushagra pant/nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\share\\nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\lib\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+    - './nltk_data'
+**********************************************************************
+
+2025-04-14 15:35:22,027 - INFO - Found 5 DuckDuckGo results for 'growth opportunities in Health & Wellness'
+2025-04-14 15:35:22,067 - INFO - Found 5 DuckDuckGo results for 'Health & Wellness market trends'
+2025-04-14 15:35:22,072 - ERROR - Keyword extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\kushagra pant/nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\share\\nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\lib\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+    - './nltk_data'
+**********************************************************************
+
+2025-04-14 15:35:22,073 - ERROR - Sentiment analysis failed: 'AIModels' object has no attribute 'sentiment_analyzer'
+2025-04-14 15:35:22,073 - ERROR - Topic modeling failed: 'AIModels' object has no attribute 'topic_modeler'
+2025-04-14 15:35:22,073 - ERROR - NER extraction failed: 'AIModels' object has no attribute 'ner_model'
+2025-04-14 15:35:22,081 - INFO - Analysis completed in 1.10s
+2025-04-14 15:35:22,088 - INFO - 127.0.0.1 - - [14/Apr/2025 15:35:22] "POST /analyze/niche HTTP/1.1" 200 -
+2025-04-14 15:43:42,119 - INFO - Loading NLP models...
+2025-04-14 15:44:29,377 - ERROR - Error loading models: Could not load model sshleifer/distilbart-cnn-12-6 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSeq2SeqLM'>, <class 'transformers.models.bart.modeling_bart.BartForConditionalGeneration'>). See the original errors:
+
+while loading with AutoModelForSeq2SeqLM, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\modeling_utils.py", line 4260, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\modeling_utils.py", line 1100, in _get_resolved_checkpoint_files
+    raise EnvironmentError(
+OSError: sshleifer/distilbart-cnn-12-6 does not appear to have a file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+while loading with BartForConditionalGeneration, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\modeling_utils.py", line 4260, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\modeling_utils.py", line 1100, in _get_resolved_checkpoint_files
+    raise EnvironmentError(
+OSError: sshleifer/distilbart-cnn-12-6 does not appear to have a file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+
+Traceback (most recent call last):
+  File "c:\Work\Hackathons\codefest\CodeFest\src\Backend\main.py", line 207, in load_models
+    self.summarizer = pipeline(
+                      ^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\pipelines\__init__.py", line 942, in pipeline
+    framework, model = infer_framework_load_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\pipelines\base.py", line 304, in infer_framework_load_model
+    raise ValueError(
+ValueError: Could not load model sshleifer/distilbart-cnn-12-6 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSeq2SeqLM'>, <class 'transformers.models.bart.modeling_bart.BartForConditionalGeneration'>). See the original errors:
+
+while loading with AutoModelForSeq2SeqLM, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\modeling_utils.py", line 4260, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\modeling_utils.py", line 1100, in _get_resolved_checkpoint_files
+    raise EnvironmentError(
+OSError: sshleifer/distilbart-cnn-12-6 does not appear to have a file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+while loading with BartForConditionalGeneration, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\modeling_utils.py", line 4260, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Hackathons\codefest\CodeFest\venv\Lib\site-packages\transformers\modeling_utils.py", line 1100, in _get_resolved_checkpoint_files
+    raise EnvironmentError(
+OSError: sshleifer/distilbart-cnn-12-6 does not appear to have a file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+
+
+2025-04-14 15:44:29,379 - CRITICAL - Failed to initialize application: Failed to load AI models
+2025-04-14 15:44:44,824 - INFO - Loading NLP models...
+2025-04-14 15:46:27,873 - WARNING - Error while downloading from https://cdn-lfs.hf.co/sshleifer/distilbart-cnn-12-6/3bac65d18c99463302d12ca75c2220ea714f9c81ce235f205fa818efe71df6ea?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1744629286&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0NDYyOTI4Nn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9zc2hsZWlmZXIvZGlzdGlsYmFydC1jbm4tMTItNi8zYmFjNjVkMThjOTk0NjMzMDJkMTJjYTc1YzIyMjBlYTcxNGY5YzgxY2UyMzVmMjA1ZmE4MThlZmU3MWRmNmVhP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiZyZXNwb25zZS1jb250ZW50LXR5cGU9KiJ9XX0_&Signature=VDyNYnhp3IYc10rLPhfircYMM5Iw6Hqvqqi6x8xvoqfiiYhUcERZpHveRicaIrzrzJ%7EtK1ThGJ7XfSW4Ht1cWePKN6YEJ4%7EJ5uQNdHYEPpgh0FIAWr4SaegXdzRHmUsYyzSd%7E9cMTP97Urh7y-flOPwK%7EC2rgHA4ivvrqAc2kdSTp-I-5Uqh1ISDSHVVDGtaXLl3o2wDbrODuVSlyxSA0NSCkRA75vYO38IVMDtYoZbWvZ3e-6Jpp6261hL3M7UHO4lvzs286-BDbe1Q5RPb9BCZg4lUqEmE4ZkXWtKFvYfIvLuMSvyYu1gKJHqQtpMwHeeB7N%7EJ%7EAhScEcTr%7ErPuA__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-04-14 15:49:11,753 - INFO - Loading NLP models (local only)...
+2025-04-14 15:50:18,088 - WARNING - Error while downloading from https://cdn-lfs.hf.co/sshleifer/distilbart-cnn-12-6/3bac65d18c99463302d12ca75c2220ea714f9c81ce235f205fa818efe71df6ea?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1744629554&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0NDYyOTU1NH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9zc2hsZWlmZXIvZGlzdGlsYmFydC1jbm4tMTItNi8zYmFjNjVkMThjOTk0NjMzMDJkMTJjYTc1YzIyMjBlYTcxNGY5YzgxY2UyMzVmMjA1ZmE4MThlZmU3MWRmNmVhP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiZyZXNwb25zZS1jb250ZW50LXR5cGU9KiJ9XX0_&Signature=cRFJkfSkjBLLIUE26fAJ7xBT5Jl56vdeTJ2uq0mtrWFz7UC3y0MBBdpg1E9niS7ksv2iq4VVUS%7EGTnt2%7ESzSDRVg7AZgrIclUcc6W0MXWP29-ZA-gEpb9BtXHnUbqnXv5e3YvsoyPxf34omDYujoFZF9RoNpo2LaAUA1OG4ScJaSZYJWVd8UK0zLykwVlKH6eGhxS2ZOOLF%7EGQr%7EriQhjo1XYVVoSiWh1HMt8lZwPpVtTY5XW%7EDS6d8RjwQ7rtRIEKr4%7Ey6ZUHIcdqd7qhhpl49CBFjaiuFVDEjM6fRT0%7EXLYSY4KlyTbcogruaGTDev354aNIrI7lZsuNol0bktVw__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-04-14 15:51:17,735 - INFO - Loading NLP models...
+2025-04-14 16:03:47,788 - WARNING - Error while downloading from https://cdn-lfs.hf.co/sshleifer/distilbart-cnn-12-6/3bac65d18c99463302d12ca75c2220ea714f9c81ce235f205fa818efe71df6ea?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1744629679&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0NDYyOTY3OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9zc2hsZWlmZXIvZGlzdGlsYmFydC1jbm4tMTItNi8zYmFjNjVkMThjOTk0NjMzMDJkMTJjYTc1YzIyMjBlYTcxNGY5YzgxY2UyMzVmMjA1ZmE4MThlZmU3MWRmNmVhP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiZyZXNwb25zZS1jb250ZW50LXR5cGU9KiJ9XX0_&Signature=O4sJsQuPYY-lalwxdItkOyhkI0JRkRBE7I15P6-fhr1s6pB6LQVNHVzRyYxOJj6dysy%7EE9KxsN-jTJUNlxuDJie0-0eHY3vPZfFRzxsCmgscjEKf%7E4Jc3a972q81Mka9txzdMGC1tZwAlUDEykNKQuU0iiDtze5kKmhiJA22iimMKzdxwUM0p4hQAcKrDUXXRFGlDye9w0ypWThfHO6aF6o4J4%7EsJ-dYfXg9Ozams-wkfd5QKn-poyBo-XsAG8OfWnCtXGF-7XPyajjlPeaQGknl3R1V7JUbAGZXgR57kNKg-MH7QNzTCTL-2R87a2x-daWvwd8tsyl8MUTx%7ELo%7E9A__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-04-14 16:12:14,237 - WARNING - Error while downloading from https://cdn-lfs.hf.co/sshleifer/distilbart-cnn-12-6/3bac65d18c99463302d12ca75c2220ea714f9c81ce235f205fa818efe71df6ea?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1744629679&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0NDYyOTY3OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9zc2hsZWlmZXIvZGlzdGlsYmFydC1jbm4tMTItNi8zYmFjNjVkMThjOTk0NjMzMDJkMTJjYTc1YzIyMjBlYTcxNGY5YzgxY2UyMzVmMjA1ZmE4MThlZmU3MWRmNmVhP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiZyZXNwb25zZS1jb250ZW50LXR5cGU9KiJ9XX0_&Signature=O4sJsQuPYY-lalwxdItkOyhkI0JRkRBE7I15P6-fhr1s6pB6LQVNHVzRyYxOJj6dysy%7EE9KxsN-jTJUNlxuDJie0-0eHY3vPZfFRzxsCmgscjEKf%7E4Jc3a972q81Mka9txzdMGC1tZwAlUDEykNKQuU0iiDtze5kKmhiJA22iimMKzdxwUM0p4hQAcKrDUXXRFGlDye9w0ypWThfHO6aF6o4J4%7EsJ-dYfXg9Ozams-wkfd5QKn-poyBo-XsAG8OfWnCtXGF-7XPyajjlPeaQGknl3R1V7JUbAGZXgR57kNKg-MH7QNzTCTL-2R87a2x-daWvwd8tsyl8MUTx%7ELo%7E9A__&Key-Pair-Id=K3RPWS32NSSJCE: The operation did not complete (read) (_ssl.c:2559)
+Trying to resume download...
+2025-04-14 16:17:11,450 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.25.188.238:8000
+2025-04-14 16:17:11,450 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-14 16:17:40,089 - INFO - 127.0.0.1 - - [14/Apr/2025 16:17:40] "OPTIONS /analyze/niche HTTP/1.1" 200 -
+2025-04-14 16:17:40,097 - INFO - Starting analysis for: Health & Wellness
+2025-04-14 16:17:40,101 - ERROR - Keyword extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - './nltk_data'
+    - 'C:\\Users\\kushagra pant/nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\share\\nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\lib\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+    - './nltk_data'
+**********************************************************************
+
+2025-04-14 16:17:46,009 - INFO - Found 5 DuckDuckGo results for ' in Health & Wellness sector'
+2025-04-14 16:17:46,028 - INFO - Found 0 DuckDuckGo results for 'challenges facing Health & Wellness businesses'
+2025-04-14 16:17:46,028 - ERROR - Keyword extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - './nltk_data'
+    - 'C:\\Users\\kushagra pant/nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\share\\nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\lib\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+    - './nltk_data'
+**********************************************************************
+
+2025-04-14 16:17:46,028 - ERROR - Sentiment analysis failed: 'AIModels' object has no attribute 'sentiment_analyzer'
+2025-04-14 16:17:46,028 - ERROR - Topic modeling failed: 'AIModels' object has no attribute 'topic_modeler'
+2025-04-14 16:17:46,028 - ERROR - NER extraction failed: 'AIModels' object has no attribute 'ner_model'
+2025-04-14 16:17:46,028 - INFO - Analysis completed in 5.93s
+2025-04-14 16:17:46,036 - INFO - 127.0.0.1 - - [14/Apr/2025 16:17:46] "POST /analyze/niche HTTP/1.1" 200 -
+2025-04-14 16:22:27,930 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.25.188.238:8000
+2025-04-14 16:22:27,930 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-14 16:22:55,632 - INFO - 127.0.0.1 - - [14/Apr/2025 16:22:55] "OPTIONS /analyze/niche HTTP/1.1" 200 -
+2025-04-14 16:22:55,643 - INFO - Starting analysis for: Health & Wellness
+2025-04-14 16:22:55,651 - ERROR - Keyword extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - './nltk_data'
+    - 'C:\\Users\\kushagra pant/nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\share\\nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\lib\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+    - './nltk_data'
+**********************************************************************
+
+2025-04-14 16:22:57,718 - INFO - Found 5 DuckDuckGo results for 'challenges facing Health & Wellness businesses'
+2025-04-14 16:22:57,718 - INFO - Found 5 DuckDuckGo results for 'growth opportunities in Health & Wellness'
+2025-04-14 16:22:57,723 - ERROR - Keyword extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - './nltk_data'
+    - 'C:\\Users\\kushagra pant/nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\share\\nltk_data'
+    - 'C:\\Work\\Hackathons\\codefest\\CodeFest\\venv\\lib\\nltk_data'
+    - 'C:\\Users\\kushagra pant\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+    - './nltk_data'
+**********************************************************************
+
+2025-04-14 16:22:57,723 - ERROR - Sentiment analysis failed: 'AIModels' object has no attribute 'sentiment_analyzer'
+2025-04-14 16:22:57,723 - ERROR - Topic modeling failed: 'AIModels' object has no attribute 'topic_modeler'
+2025-04-14 16:22:57,723 - ERROR - NER extraction failed: 'AIModels' object has no attribute 'ner_model'
+2025-04-14 16:22:57,723 - INFO - Analysis completed in 2.08s
+2025-04-14 16:22:57,723 - INFO - 127.0.0.1 - - [14/Apr/2025 16:22:57] "POST /analyze/niche HTTP/1.1" 200 -

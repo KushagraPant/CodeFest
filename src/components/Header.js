@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className={`header ${showHeader ? 'show' : 'hide'}`}>
       <div className="left-section">
-        <img src="/images/logo.jpg" alt="Logo" className="logo" />
+        <img src="/images/loggo.gif" alt="Logo" className="logo" />
         <h1 className="site-name">TrendScope</h1>
       </div>
       <div className="right-section">

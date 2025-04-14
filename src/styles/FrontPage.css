@@ -3,18 +3,18 @@
     height: 90vh;
     width: 100%;
     overflow: hidden;
-  }
-  
-  .slideshow-container {
+}
+
+.slideshow-container {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: 0;
-  }
-  
-  .slide {
+}
+
+.slide {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -22,60 +22,232 @@
     opacity: 0;
     transition: opacity 1.2s ease-in-out;
     filter: brightness(0.5);
-  }
-  
-  .slide.active {
+}
+
+.slide.active {
     opacity: 1;
     z-index: 1;
-  }
-  
-  .overlay-content {
+}
+
+.overlay-content {
     position: relative;
     z-index: 2;
     color: white;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
-  }
-  
-  .main-title {
+}
+
+.main-title {
+    font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 20px;
-  }
-  
-  .tagline {
+}
+
+.tagline {
     font-size: 1.5rem;
     margin-bottom: 30px;
-  }
-  
-  .get-started-btn {
-    padding: 12px 28px;
+}
+
+/* TrendScope Brand Styling */
+.trendscope-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 1rem 2rem;
+}
+
+.trendscope-logo {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.trendscope-logo:hover {
+    transform: scale(1.05);
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #007bff, #00d2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+}
+
+/* Enhanced Get Started Section */
+.get-started-section {
+    position: relative;
+    z-index: 2;
+    padding: 4rem 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 2rem auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.get-started-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.get-started-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.get-started-btn {
+    padding: 16px 36px;
     font-size: 1.1rem;
-    background-color: #007bff;
+    background: linear-gradient(135deg, #007bff, #00d2ff);
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .get-started-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .main-title {
-      font-size: 2.5rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+}
+
+.get-started-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.3);
+}
+
+.get-started-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.get-started-btn:hover::before {
+    left: 100%;
+}
+
+/* Features Grid in Get Started Section */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.feature-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #ffffff;
+}
+
+.feature-description {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .get-started-section {
+        padding: 3rem 1.5rem;
+        margin: 1rem;
     }
-  
-    .tagline {
-      font-size: 1.1rem;
+
+    .get-started-title {
+        font-size: 2.5rem;
     }
-  
+
+    .get-started-description {
+        font-size: 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .trendscope-brand {
+        padding: 0.8rem 1rem;
+    }
+
+    .brand-name {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .get-started-title {
+        font-size: 2rem;
+    }
+
     .get-started-btn {
-      font-size: 1rem;
+        padding: 14px 28px;
+        font-size: 1rem;
     }
-  }
+
+    .trendscope-logo {
+        height: 32px;
+    }
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
   

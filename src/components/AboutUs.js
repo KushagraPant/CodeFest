@@ -30,21 +30,24 @@ const AboutUs = () => {
       <div className="about-section">
         <div className="about-image-container">
           <img
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1170&q=80"
+            src="/images/aboutus.jpg"
             alt="Our Team"
           />
         </div>
         <div className="about-content">
           <h1>About Us</h1>
           <p className="about-subheading">
-            We're a passionate team dedicated to innovation and excellence.
+          We're a dynamic team driven by innovation, harnessing the power of AI to deliver smart, data-backed market insights with precision and purpose.
           </p>
-          <p>
-            Founded in 2015, our company has grown from a small startup to an industry leader, driven by our commitment to quality and customer satisfaction.
+          <p className="about-subheading2">
+            TrendScope is your intelligent window into tomorrow’s markets. Powered by AI, we analyze real-time data, track emerging trends, and deliver actionable insights—helping businesses stay ahead of the curve with confidence and clarity.
           </p>
-          <p>
-            Our diverse team brings together expertise from various backgrounds, allowing us to approach challenges with fresh perspectives and creative solutions.
+          <br></br>
+          <p className="about-subheading2">
+            Our diverse team brings together expertise from various backgrounds, allowing us to approach challenges with fresh perspectives and creative solutions. 
           </p>
+          <br></br>
+          <p className="about-subheading3">Our platform transforms complex data into clear, actionable insights—helping brands, startups, and decision-makers stay ahead in fast-moving markets. We don’t just follow trends—we forecast them.</p>
         </div>
       </div>
 
@@ -63,7 +66,7 @@ const AboutUs = () => {
         />
         <ValueCard
           title="Excellence"
-          image="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1170&q=80"
+          image="/images/abtus.jpg"
           shortText="We strive for the highest standards in our work."
           longText="Our pursuit of excellence is reflected in our attention to detail, quality assurance processes, and continuous improvement initiatives."
         />

@@ -1,0 +1,16 @@
+aiohttp
+feedparser
+flask[async]
+pydantic
+beautifulsoup4
+transformers
+flask-cors
+flask-limiter
+nltk
+python-dotenv
+fuzzywuzzy
+yfinance
+edgar
+pandas-datareader
+pandas
+requests

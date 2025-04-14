@@ -33,7 +33,7 @@
     height: 50px; /* Adjust logo size */
     object-fit: cover; /* Ensures the image is cropped correctly */
     margin-right: 10px;
-    border-radius: 50%; /* Makes the logo circular */
+    border-radius:30; /* Makes the logo circular */
     overflow: hidden; /* Prevents overflow of image */
 }
 
