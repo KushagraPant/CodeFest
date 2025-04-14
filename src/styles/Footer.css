@@ -1,82 +1,95 @@
 .footer {
-    background-color: #f9fafa;
-    padding: 2rem;
-    border-radius: 10px;
-    font-family: 'Segoe UI', sans-serif;
-    color: #1a1a1a;
-    max-width: auto;
-    margin: auto;
-  }
-  
-  .footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  
-  .footer-left {
-    max-width: 50%;
-  }
-  
-  .logo {
-    width: 30px;
-    height: 30px;
-    background: radial-gradient(circle at center, #a0f000, #4ade80);
-    border-radius: 50%;
-    margin-bottom: 0.5rem;
-  }
-  
-  .contact-info {
-    display: flex;
-    gap: 2rem;
-    margin-top: 1rem;
-  }
-  
-  .contact-info p {
-    margin: 0;
-    line-height: 1.5;
-  }
-  
-  .footer-right h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .cta-buttons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  
-  .btn {
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
-    border-radius: 20px;
-    cursor: pointer;
-    border: none;
-  }
-  
-  .btn-green {
-    background-color: #7ae51b;
-    color: white;
-  }
-  
-  .btn-outline {
-    background-color: white;
-    color: black;
-    border: 1px solid #ccc;
-  }
-  
-  hr {
-    margin: 2rem 0;
-    border: none;
-    border-top: 1px solid #e0e0e0;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    font-size: 0.95rem;
-    color: #666;
-  }
-  
+  background-color: #f9fafa;
+  padding: 2rem;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1a1a1a;
+  max-width: auto;
+  margin: auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  max-width: 50%;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle at center, #a0f000, #4ade80);
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.contact-info p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer-right h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-green {
+  background-color: #7ae51b;
+  color: white;
+}
+
+.btn-green:hover {
+  transform: scale(1.05);  /* Slight zoom effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow effect */
+  background-color: #5d8d14;  /* Darker green on hover */
+}
+
+.btn-outline {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.btn-outline:hover {
+  transform: scale(1.05);  /* Slight zoom effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow effect */
+  background-color: #f2f2f2;  /* Light gray on hover */
+  border-color: #888;  /* Darker border color */
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+}
